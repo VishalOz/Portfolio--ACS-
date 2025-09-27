@@ -23,7 +23,7 @@ nav ul li a {
     font-family: 'Roboto Mono';
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px 5px;
 }
 nav ul a:hover {
@@ -35,4 +35,58 @@ nav ul li.logo {
 .logopng {
     width: auto;
     height: 50px;
+}
+.hero {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: end;
+    padding-left: 700px;
+    padding-top: 260px;
+}
+.hero h1 {
+    font-family: 'Roboto Mono';
+    font-size: 30px;
+    font: bold;
+}
+.round {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 350px;
+    top: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heropara {
+    font-family: 'Roboto Mono';
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    font-size: 15px;
+    width: 650px;
+}
+.logopng2 {
+    width: 80px;
+    height: 100px;
+    transition: ease-in-out 0.3s;
+}
+.logopng2:hover {
+    transform: rotateY(180deg);
+}
+.socials {
+    width: 500px;
+    height: 50px;
+    gap: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 700px;
+}
+.socials .icon {
+    width: 30px;
+    height: 30px;
+
 }
