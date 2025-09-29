@@ -132,6 +132,10 @@ nav ul li.logo {
     padding: 10px;
     font-size: 15px;
     max-width: 300px;
+}
 
-
+.aboutcont {
+    padding: 100px;
+    font-family: 'Alfa Slab One';
+    
 }
