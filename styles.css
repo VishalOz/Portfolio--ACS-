@@ -89,6 +89,7 @@ nav ul li.logo {
     align-items: center;
     margin-top: 30px;
     margin-left: 700px;
+    margin-bottom: 300px;
 }
 .socials .icon {
     width: 30px;
@@ -105,6 +106,7 @@ nav ul li.logo {
     grid-template-columns: auto auto  auto  auto;
     padding: 100px;
     font-family: 'Roboto Mono';
+    margin-bottom: 100px;
 }
 .sec1 {
     width: 300px;
