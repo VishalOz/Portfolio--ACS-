@@ -102,11 +102,11 @@ nav ul li.logo {
     font-family: 'Alfa Slab One';
     padding-left: 100px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 }
 .projects {
     display: grid;
-    grid-template-columns: auto auto  auto  auto;
+    grid-template-columns: repeat(4, 1fr);
     padding: 0px 100px 100px 100px;
     font-family: 'Roboto Mono';
     margin-bottom: 100px;
@@ -186,16 +186,22 @@ footer {
 
 
 /* Blogs page */
+.bloghead {
+    font-family: 'Alfa Slab One';
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
 .blogCardHolder {
     display: grid;
-    grid-template-columns: (4 1fr);
+    grid-template-columns: (2 1fr);
     display: flex;
     padding: 0px 100px 50px 100px;
-    gap:20px;
+    gap:30px;
     
 }
 .blogCard {
-    width: 300px;
+    width: 650px;
     height: 400px;
     border: 1px solid black; 
     transition: ease-in-out 0.1s;
