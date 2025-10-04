@@ -59,6 +59,7 @@ nav ul li.navLogo {
 }
 
 /*    iphone Pro Max Size    */
+
 @media (max-width: 1024px) {
     nav {
         padding: 30px 5px;
@@ -247,6 +248,37 @@ mark {
     font-size: 15px;
     max-width: 300px;
 }
+
+/*    iphone Pro Max Size    */
+
+@media (max-width: 1024px) {
+    .proHead {
+        font-family: 'Alfa Slab One';
+        padding: 12px 0px 0px 50px;
+    }
+
+    .projectsList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0px 50px 50px;
+        margin-bottom: 250px;
+    }
+
+    .projectsSec {
+        width: 300px;
+        height: 350px;
+        border: 1px solid var(--charcoal); 
+        padding: 30px 10px 10px 0px;
+        margin-bottom: 50px;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    }
+
+    .pi {
+        width: 270px;
+        height: 120px;
+    }
+}
+
 
 /* ------------------------- Projects Page End ------------------------------ */
 
