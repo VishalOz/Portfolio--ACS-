@@ -1,60 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono';
+    scroll-behavior: smooth;
 }
+
+:root {
+    --charcoal: #111827ff;
+    --steel: #1f2937ff;
+    --slate: #374151ff;
+    --cool-gray: #9ca3afff;
+    --off-white: #f9fafbff;
+    --oxford-blue: #1b263bff;
+}
+
 body {
-    background-color: white;
+    background-color: var(--off-white);
+    height: 100%;
 }
+
+/* ---------------------------- Navbar --------------------------- */
+
 nav {
     padding: 30px 100px;
 }
-mark {
-    background-color: #9CA3AF;
-    color: white;
-    padding: 0 4px; 
-}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
 }
+
 nav ul li {
     margin-right: 90px;
 }
 nav ul li a {
-    font-family: 'Roboto Mono';
     text-decoration: none;
-    color: black;
+    color: var(--charcoal);
     font-size: 18px;
     padding: 8px 5px;
 }
+
 nav ul a:hover {
     text-decoration: underline;
 }
-nav ul li.logo {
+
+nav ul li.navLogo {
     margin-right: auto;
 }
-.logopng {
+
+.navLogoImg {
     width: auto;
     height: 50px;
 }
+
+/* ------------------------- Navbar End ----------------------------- */
+
+
+
+/* ------------------------- Home Page ------------------------------ */
+
 .hero {
     display: grid;
     grid-template-rows: auto 1fr auto;
     align-items: end;
-    padding-left: 700px;
-    padding-top: 300px;
+    padding: 300px 0 0 700px; 
 }
+
 .hero h1 {
-    font-family: 'Roboto Mono';
     font-size: 30px;
     font: bold;
 }
-.round {
-    background-color: black;
+
+.heroLogoBg {
+    background: radial-gradient(closest-side, var(--charcoal), rgba(0, 0, 0, 0.8));
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -65,113 +88,137 @@ nav ul li.logo {
     justify-content: center;
     align-items: center;
 }
-.heropara {
-    font-family: 'Roboto Mono';
-    color: rgba(0, 0, 0, 0.7);
+
+.heroPara {
+    color: var(--slate);
     margin-top: 10px;
     font-size: 15px;
     width: 650px;
 }
-.logopng2 {
+
+.heroLogo {
     width: 80px;
     height: 100px;
-    transition: ease-in-out 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
-.logopng2:hover {
+
+.heroLogo:hover {
     transform: rotateY(180deg);
 }
-.socials {
+
+.heroSocials {
     width: 500px;
     height: 50px;
     gap: 15px;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: 30px;
-    margin-left: 700px;
-    margin-bottom: 300px;
+    margin: 10px 0 300px 700px;
 }
-.socials .icon {
+
+.heroSocials .icon {
     width: 30px;
     height: 30px;
 }
 
+/* ------------------------- Home Page End ------------------------------ */
 
-/* PROJECTS PAGE */
-.prohead {
+
+
+
+/* ------------------------- Projects Page ------------------------------ */
+
+
+.proHead {
     font-family: 'Alfa Slab One';
-    padding-left: 100px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding: 12px 0 50px 100px;
 }
-.projects {
+
+.projectsList {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0px 100px 100px 100px;
-    font-family: 'Roboto Mono';
+    padding: 0px 100px 100px;
     margin-bottom: 100px;
 }
-.sec1 {
+
+.projectsSec {
     width: 300px;
     height: 400px;
-    border: 1px solid black; 
-    transition: ease-in-out 0.1s;
+    border: 1px solid var(--charcoal); 
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 }
-.sec1:hover {
-    scale: 105%;
-    box-shadow: 2px 2px 5px gray;
-    
+
+.projectsSec:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px var(--cool-gray);
 }
-.sec1 h2 {
+
+.projectsSec h2 {
     display: flex;
     justify-content: center;
 }
-.sec1 .date {
+
+.projectsSec .date {
     font-size: 13px;
     margin-left: 160px;
 }
+
 .pi {
     width: 295px;
     height: 200px;
-    
 }
+
 .pi:hover {
     filter:grayscale();
 }
+
+mark {
+    background-color: var(--slate);
+    color: var(--off-white);
+    padding: 0 4px; 
+}
+
 .caption {
     padding: 10px;
     font-size: 15px;
     max-width: 300px;
 }
 
+/* ------------------------- Projects Page End ------------------------------ */
 
 
-/* Footer */
+
+/* ---------------------------  Footer -------------------------------------- */
+
 footer {
     width: full;
-    background-image: linear-gradient(to right, black , rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
+    padding: 50px 0 50px 0;
 }
-.footerh2 {
-    color: white;
-    font-family: 'Roboto Mono';
+
+.footerHeading {
+    color: var(--off-white);
     font-size: 20px;
     margin-bottom: 10px;
 }
-.footerdiv {
+.footerPara1 {
     display: flex;
     justify-content: center;
 }
-.footerp {
-    color: white;
-    font-family: 'Roboto Mono';
+
+.footerPara2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footerPara11 {
+    color: var(--off-white);
     font-size: 15px;
 }
-.footersocials {
+
+.footerSocials {
     margin-top: 5px;
     gap: 3px;
     display: flex;
@@ -179,17 +226,18 @@ footer {
     filter: invert(1) grayscale(100%) brightness(200%);
 }
 
+/* ------------------------- Footer End --------------------------------- */
 
-/* Blogs page */
+
+
+/* ------------------------- Blogs Page ---------------------------------- */
 .bloghead {
     font-family: 'Alfa Slab One';
-    padding-left: 100px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding: 10px 0 50px 100px;
 }
 .blogCardHolder {
     display: grid;
-    grid-template-columns: (2 1fr);
+    grid-template-columns: (2, 1fr);
     display: flex;
     padding: 0px 100px 50px 100px;
     gap:30px;
@@ -198,14 +246,15 @@ footer {
 .blogCard {
     width: 650px;
     height: 400px;
-    border: 1px solid black; 
-    transition: ease-in-out 0.1s;
+    border: 1px solid var(--charcoal); 
+    transition: transform 0.1s ease-in-out;
 }
+
 .blogCard:hover {
     scale: 105%;
-    box-shadow: 2px 2px 5px gray;
-    
+    box-shadow: 2px 2px 5px var(--cool-gray);
 }
+
 .blogCardHolder2 {
     display: grid;
     grid-template-columns: auto auto;
@@ -213,47 +262,49 @@ footer {
     padding: 0px 100px 50px 100px;
     gap:20px;
 }
+
 .blogCard21 {
     width: 700px;
     height: 500px;
-    border: 1px solid black; 
-    transition: ease-in-out 0.1s;
+    border: 1px solid var(--charcoal); 
+    transition: transform 0.1s ease-in-out;
 }
+
 .blogCard22 {
     width: 300px;
     height: 250px;
-    border: 1px solid black; 
-    transition: ease-in-out 0.1s;
+    border: 1px solid var(--charcoal); 
+    transition: transform 0.1s ease-in-out;
 }
 
+/* ------------------------- Blogs Page End --------------------------------- */
 
-/* About Page */
+
+
+/* ------------------------- About Page ------------------------------------- */
+
 .abouthead {
     font-family: 'Alfa Slab One';
-    padding-left: 100px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding: 10px 0 30px 100px;
 }
 .abtcont {
     display: flex;
     justify-content: center;
-    gap: 50px;
-
-    
+    gap: 50px;    
 }
 .aboutpara {
-    font-family: 'Roboto Mono';
     font-size: 18px;
     padding: 0px 0px 0px 100px;
     max-width: 600px;
 }
-/* Form */
+
+/* -------------------------------- Form -------------------------------------- */
+
 .subscribe {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    font-family: 'Roboto Mono';
-    border: 1px solid #ddd;
+    border: 1px solid var(--off-white);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
  
 }
@@ -278,13 +329,14 @@ footer {
 }
 .subscribe-form input {
     padding: 10px;
-    border: 1px solid #aaa;
+    border: 1px solid var(--charcoal);
     font-size: 14px;
 }
 .subscribe-form button {
     padding: 10px;
-    background-image: linear-gradient(to right, black , rgba(0, 0, 0, 0.7));
-    color: white;
-    font-family: 'Roboto Mono';
+    background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.7));
+    color: var(--off-white);
     font-size: 14px;
 }
+
+/* ------------------------- About Page End ---------------------------------- */
