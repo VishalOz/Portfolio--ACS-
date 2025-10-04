@@ -58,6 +58,26 @@ nav ul li.navLogo {
     height: 50px;
 }
 
+/*    iphone Pro Max Size    */
+@media (max-width: 1024px) {
+    nav {
+        padding: 30px 5px;
+    }
+
+    nav ul li {
+        margin-right: 35px;
+    }
+
+    nav ul li.navLogo {
+        margin-right: 180px;
+    }
+
+    .navLogoImg {
+        width: auto;
+        height: 40px;
+    }
+}
+
 /* ------------------------- Navbar End ----------------------------- */
 
 
@@ -77,7 +97,7 @@ nav ul li.navLogo {
 }
 
 .heroLogoBg {
-    background: radial-gradient(closest-side, var(--charcoal), rgba(0, 0, 0, 0.8));
+    background: var(--charcoal);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -119,6 +139,50 @@ nav ul li.navLogo {
 .heroSocials .icon {
     width: 30px;
     height: 30px;
+}
+
+/*    iphone Pro Max Size    */
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 300px 0px 0px 40px;
+    }
+
+    .hero h1 {
+        font-size: 90px;
+    }
+    
+    .hero p {
+        font-size: 30px;
+    }
+    
+    .heroLogoBg {
+        position: absolute;
+        right: 70px;
+        top: 200px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .heroLogo {
+        width: 120px;
+        height: 150px;
+    }
+
+    .heroSocials {
+        width: 500px;
+        height: 50px;
+        gap: 15px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 20px 0 300px 40px;
+    }
+
+    .heroSocials .icon {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /* ------------------------- Home Page End ------------------------------ */
@@ -203,6 +267,7 @@ footer {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .footerPara1 {
     display: flex;
     justify-content: center;
@@ -224,6 +289,24 @@ footer {
     display: flex;
     justify-content: center;
     filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+@media (max-width: 1024px) {
+    footer {
+        width: full;
+        height: 350px;
+        background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 90px 5px 90px 5px;
+    }
+
+    .footerHeading {
+        color: var(--off-white);
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
 }
 
 /* ------------------------- Footer End --------------------------------- */
