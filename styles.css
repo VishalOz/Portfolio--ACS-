@@ -16,6 +16,8 @@
     --cool-gray: #9ca3afff;
     --off-white: #f9fafbff;
     --oxford-blue: #1b263bff;
+    --purl-orange: #f1856f;
+    --matte-green: #afd2a2;
 }
 
 body {
@@ -346,51 +348,103 @@ footer {
 
 
 /* ------------------------- Blogs Page ---------------------------------- */
-.bloghead {
-    font-family: 'Alfa Slab One';
-    padding: 10px 0 50px 100px;
-}
-.blogCardHolder {
-    display: grid;
-    grid-template-columns: (2, 1fr);
+
+.blogCont {
     display: flex;
-    padding: 0px 100px 50px 100px;
-    gap:30px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.blogHead {
+    padding: 10px 0 50px 100px;
+    font-size: 150px;
+    color: var(--oxford-blue);
+    line-height: 0px;
+   
+}
+
+.blogHead2 {
+    padding: 10px 0 50px 60px;
+    font-size: 150px;
+    color: var(--slate);
+    writing-mode: vertical-rl;
+}
+
+.mainCont {
+    display: flex;
+}
+
+.cont {
+    background-color: var(--matte-green);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 900px;
+    height: 450px;
+    box-shadow: 20px 20px 0.5px 10px solid black;
+    display: flex;
     
 }
-.blogCard {
-    width: 650px;
-    height: 400px;
-    border: 1px solid var(--charcoal); 
-    transition: transform 0.1s ease-in-out;
+
+.art1 {
+    padding: 20px 60px 0px 60px;
 }
 
-.blogCard:hover {
-    scale: 105%;
-    box-shadow: 2px 2px 5px var(--cool-gray);
+.art2 {
+    margin: 50px 10px 0px 10px;
+    width: 250px;
 }
 
-.blogCardHolder2 {
-    display: grid;
-    grid-template-columns: auto auto;
+.art2 h1 {
+    font-weight: bold;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+.art2 p {
+    line-height: 18px;
+    color: var(--charcoal);
+}
+
+.art1 h1 {
+    font-weight: bold;
+    color: var(--charcoal);
+    margin-bottom: 10px;
+    font-size: 70px;
+}
+
+.art1 p {
+    color: var(--steel);
+}
+
+.buttonCont {
     display: flex;
-    padding: 0px 100px 50px 100px;
-    gap:20px;
+    justify-content: end;
 }
 
-.blogCard21 {
-    width: 700px;
-    height: 500px;
-    border: 1px solid var(--charcoal); 
-    transition: transform 0.1s ease-in-out;
+.buttonCont button{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0px 10px 0px 10px;
 }
 
-.blogCard22 {
-    width: 300px;
-    height: 250px;
-    border: 1px solid var(--charcoal); 
-    transition: transform 0.1s ease-in-out;
+.buttonCont button::after {
+    content: " →";
+    position: relative;
+    left: 0px;
+    transition: left 0.3s ease;
 }
+
+.buttonCont button:hover:after {
+    left: 5px;
+}
+
+
+
+
 
 /* ------------------------- Blogs Page End --------------------------------- */
 
