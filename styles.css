@@ -514,7 +514,6 @@ footer {
     }
 
     .formnDes {
-        display: flex;
         padding: 50px 0px 0px 50px;
         margin-bottom: 300px;
         align-items: center;
@@ -522,7 +521,7 @@ footer {
     }
     
     .des {
-        width: 300px;
+        width: 1200px;
         height: 500px;
         background: #000;
     }
