@@ -458,6 +458,10 @@ footer {
     margin-bottom: 30px;
 }
 
+.aboutCont {
+    position: relative;
+}
+
 .aboutHead {
     display: flex;
     font-family: 'Alfa Slab One';
@@ -467,9 +471,13 @@ footer {
 
 .aboutPara {
     font-size: 18px;
-    padding: 0px 0px 0px 100px;
+    padding: 0px 0px 50px 100px;
     word-break: normal;
     width: 1400px;
+    z-index: 1; 
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
     
 }
 
@@ -477,18 +485,76 @@ footer {
     color: black;
 }
 
-.formnDes {
-    display: flex;
-    padding: 50px 0px 0px 100px;
-    align-items: center;
-    height: 600px;
+.animeObj {
+    width: 50px;
+    height: 50px;
+    background: var(--charcoal);
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    animation: moveAndColor 10s infinite ease-in-out;
+    z-index: 10; 
 }
 
-.des {
-    width: 700px;
-    height: 500px;
-    background: #000;
+@keyframes moveAndColor {
+    0% {
+        left: 700px;
+        top: 200px;
+        background: var(--cool-gray);
+    }
+    10% {
+        left: 620px;
+        top: 230px;
+        background: var(--matte-green);
+    }
+    20% {
+        left: 400px;
+        top: 280px;
+        background: var(--matte-green);
+    }
+    30% {
+        left: 200px;
+        top: 310px;
+        background: var(--matte-green);
+    }
+    40% {
+        left: 450px;
+        top: 260px;
+        background: var(--off-white);
+    }
+    50% {
+        left: 700px;
+        top: 210px;
+        background: var(--off-white);
+    }
+    60% {
+        left: 900px;
+        top: 230px;
+        background: var(--purl-orange);
+    }
+    70% {
+        left: 1100px;
+        top: 270px;
+        background: var(--purl-orange);
+    }
+    80% {
+        left: 1200px;
+        top: 300px;
+        background: var(--purl-orange);
+    }
+    90% {
+        left: 950px;
+        top: 250px;
+        background: var(--cool-gray);
+    }
+    100% {
+        left: 700px;
+        top: 200px;
+        background: var(--cool-gray);
+    }
 }
+
+
 
 /*    iphone Pro Max Size    */
 
