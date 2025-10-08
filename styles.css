@@ -45,10 +45,16 @@ nav ul li a {
     color: var(--charcoal);
     font-size: 18px;
     padding: 8px 5px;
+    transition: transform 0.3s ease;
+    display: inline-block; /* This is something really compulsory when you are adding scaling */
 }
 
-nav ul a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    transform: scale(1.5);
+}
+
+nav ul li a .active {
+    transform: scale(1.5);
 }
 
 nav ul li.navLogo {
