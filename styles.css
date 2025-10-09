@@ -50,11 +50,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    transform: scale(1.5);
+    transform: scale(1.6);
 }
 
-nav ul li a .active {
-    transform: scale(1.5);
+nav ul li a.active {
+    transform: scale(1.6);
 }
 
 nav ul li.navLogo {
@@ -148,6 +148,45 @@ nav ul li.navLogo {
 .heroSocials .icon {
     width: 30px;
     height: 30px;
+}
+
+.animeObj {
+    width: 100px;
+    height: 100px;
+    background: var(--charcoal);
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    animation: moveAndColor 8s infinite ease-in-out;
+    z-index: 10; 
+}
+
+@keyframes moveAndColor{
+    0% {
+        top: 200px;
+        left: 600px;
+        background:var(--cool-gray);
+    }
+    25% {
+        top: 600px;
+        left: 570px;
+        background:var(--matte-green);
+    }
+    50% {
+        top: 200px;
+        left: 100px;
+        background:var(--oxford-blue);
+    }
+    75% {
+        top: 700px;
+        left: 100px;
+        background:var(--purl-orange);
+    }
+    100% {
+        top: 200px;
+        left: 600px;
+        background:var(--slate);
+    }
 }
 
 /*    iphone Pro Max Size    */
@@ -490,76 +529,6 @@ footer {
 .aboutSpan {
     color: black;
 }
-
-.animeObj {
-    width: 50px;
-    height: 50px;
-    background: var(--charcoal);
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    animation: moveAndColor 10s infinite ease-in-out;
-    z-index: 10; 
-}
-
-@keyframes moveAndColor {
-    0% {
-        left: 700px;
-        top: 200px;
-        background: var(--cool-gray);
-    }
-    10% {
-        left: 620px;
-        top: 230px;
-        background: var(--matte-green);
-    }
-    20% {
-        left: 400px;
-        top: 280px;
-        background: var(--matte-green);
-    }
-    30% {
-        left: 200px;
-        top: 310px;
-        background: var(--matte-green);
-    }
-    40% {
-        left: 450px;
-        top: 260px;
-        background: var(--off-white);
-    }
-    50% {
-        left: 700px;
-        top: 210px;
-        background: var(--off-white);
-    }
-    60% {
-        left: 900px;
-        top: 230px;
-        background: var(--purl-orange);
-    }
-    70% {
-        left: 1100px;
-        top: 270px;
-        background: var(--purl-orange);
-    }
-    80% {
-        left: 1200px;
-        top: 300px;
-        background: var(--purl-orange);
-    }
-    90% {
-        left: 950px;
-        top: 250px;
-        background: var(--cool-gray);
-    }
-    100% {
-        left: 700px;
-        top: 200px;
-        background: var(--cool-gray);
-    }
-}
-
 
 
 /*    iphone Pro Max Size    */
