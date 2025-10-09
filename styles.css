@@ -592,6 +592,31 @@ footer {
     margin-bottom: 10px;
 }
 
+.message {
+    height: 100px;
+    resize: none;
+    border: 1px solid var(--charcoal);
+    font-size: 14px;
+    outline: none;
+}
+
+.conditionDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#checkbox {
+    border: 1px solid var(--charcoal);
+}
+
+.condition {
+    font-size: 1px;
+    color: var(--slate);
+    opacity: 0.7;
+    text-align: flex-start;
+}
+
 .subscribeForm {
     display: flex;
     flex-direction: column;
