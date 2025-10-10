@@ -489,6 +489,51 @@ footer {
     left: 5px;
 }
 
+.secondMainCont {
+    padding: 10px 50px 50px 100px ;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.secondMainCont > article {
+    background: var(--slate);
+    color: white;
+    padding: 50px;
+
+}
+
+.secondMainCont > article h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.secondMainCont > article:nth-child(even) {
+    background: var(--purl-orange);
+    color: black;
+}
+
+.secondMainCont > article details {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    list-style: none;
+    color: #0078ff;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+details[open] summary::after {
+    content: "  (show less)";
+}
+
 @media (max-width: 1024px) {
     .blogCont {
         display: flex;
@@ -584,6 +629,51 @@ footer {
     .buttonCont button:hover::after {
         left: 5px;
     }
+
+    .secondMainCont {
+        padding: 10px 50px 50px 100px ;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .secondMainCont > article {
+        background: var(--slate);
+        color: white;
+        padding: 50px;
+    
+    }
+    
+    .secondMainCont > article h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .secondMainCont > article:nth-child(even) {
+        background: var(--purl-orange);
+        color: black;
+    }
+    
+    .secondMainCont > article details {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    
+    summary {
+        font-weight: bold;
+        list-style: none;
+        color: #0078ff;
+    }
+    
+    summary:hover {
+        text-decoration: underline;
+    }
+    
+    details[open] summary::after {
+        content: "  (show less)";
+    }
     
 }
 
@@ -653,8 +743,8 @@ footer {
     }
     
     .des {
-        width: 1200px;
-        height: 500px;
+        width: 80px;
+        height: 200px;
         background: #000;
     }
 }
@@ -734,6 +824,10 @@ footer {
     background-image: linear-gradient(to right, var(--slate) , var(--charcoal), var(--slate));
     color: var(--off-white);
     font-size: 14px;
+}
+
+input:invalid {
+    background: var(--cool-gray);
 }
 
 /*    iphone Pro Max Size    */
