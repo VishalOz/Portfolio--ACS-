@@ -312,15 +312,16 @@ mark {
     }
 
     .projectsList {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 20px 20px 50px 20px;
         margin-bottom: 250px;
     }
 
     .projectsSec {
-        width: 300px;
-        height: 350px;
+        width: 500px;
+        height: 450px;
         border: 1px solid var(--charcoal); 
         padding: 30px 10px 10px 0px;
         margin-bottom: 50px;
@@ -328,8 +329,22 @@ mark {
     }
 
     .pi {
-        width: 270px;
-        height: 120px;
+        width: 500px;
+        height: 200px;
+    }
+
+    .caption {
+        padding: 10px 50px 10px 50px;
+        font-size: 15px;
+        margin-top: 10px;
+        max-width: 600px;
+    }
+
+    .projectsSec time[target] {
+        font-size: 13px;
+        display: flex;
+        justify-content: end;
+        color: var(--oxford-blue);
     }
 }
 
@@ -624,6 +639,11 @@ details[open] summary::after {
     
     .buttonCont button:hover::after {
         left: 5px;
+    }
+
+    .secondMainCont {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     
     .secondMainCont > article {
