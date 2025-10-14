@@ -258,16 +258,18 @@ nav ul > li.navLogo {
 
 .projectsList {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0px 100px 100px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 100px 100px 100px;
     margin-bottom: 100px;
 }
 
 .projectsSec {
-    width: 300px;
-    height: 400px;
+    width: full;
+    height: auto;
+    margin: 20px;
     border: 1px solid var(--charcoal); 
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    display: flex;
 }
 
 .projectsSec:hover {
@@ -282,13 +284,22 @@ nav ul > li.navLogo {
 
 .projectsSec time[target] {
     font-size: 13px;
-    margin-left: 160px;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
     color: var(--oxford-blue);
 }
 
+.figCont {
+    display: grid;
+    grid-template-rows: (3, 1fr);
+    align-items: center;
+    padding: 20px;
+}
+
 .pi {
-    width: 295px;
-    height: 200px;
+    width: full;
+    height: 300px;
 }
 
 mark {
@@ -300,7 +311,22 @@ mark {
 .caption {
     padding: 10px;
     font-size: 15px;
-    max-width: 300px;
+    max-width: 800px;
+}
+
+.backToTop {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    margin: 20px 100px 50px auto;
+    background-color: var(--charcoal);
+    color: var(--off-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px var(--cool-gray);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /*    iphone Pro Max Size    */
