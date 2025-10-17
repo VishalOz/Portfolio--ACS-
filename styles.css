@@ -258,16 +258,18 @@ nav ul > li.navLogo {
 
 .projectsList {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0px 100px 100px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 100px 100px 100px;
     margin-bottom: 100px;
 }
 
 .projectsSec {
-    width: 300px;
-    height: 400px;
+    width: full;
+    height: auto;
+    margin: 20px;
     border: 1px solid var(--charcoal); 
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    display: flex;
 }
 
 .projectsSec:hover {
@@ -282,13 +284,22 @@ nav ul > li.navLogo {
 
 .projectsSec time[target] {
     font-size: 13px;
-    margin-left: 160px;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
     color: var(--oxford-blue);
 }
 
+.figCont {
+    display: grid;
+    grid-template-rows: (3, 1fr);
+    align-items: center;
+    padding: 20px;
+}
+
 .pi {
-    width: 295px;
-    height: 200px;
+    width: full;
+    height: 300px;
 }
 
 mark {
@@ -300,51 +311,46 @@ mark {
 .caption {
     padding: 10px;
     font-size: 15px;
-    max-width: 300px;
+    max-width: 800px;
+}
+
+.backToTop {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    margin: 20px 100px 50px auto;
+    background-color: var(--charcoal);
+    color: var(--off-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px var(--cool-gray);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /*    iphone Pro Max Size    */
 
 @media (max-width: 1024px) {
-    .proHead {
-        font-family: 'Alfa Slab One';
-        padding: 12px 0px 0px 50px;
-    }
-
     .projectsList {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 20px 50px 20px;
-        margin-bottom: 250px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 10px 10px 10px;
+        margin-bottom: 100px;
     }
 
     .projectsSec {
-        width: 500px;
-        height: 450px;
+        width: 600px;
+        height: auto;
+        margin: 20px;
         border: 1px solid var(--charcoal); 
-        padding: 30px 10px 10px 0px;
-        margin-bottom: 50px;
         transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        display: flex;
     }
 
     .pi {
-        width: 500px;
-        height: 200px;
-    }
-
-    .caption {
-        padding: 10px 50px 10px 50px;
-        font-size: 15px;
-        margin-top: 10px;
-        max-width: 600px;
-    }
-
-    .projectsSec time[target] {
-        font-size: 13px;
-        display: flex;
-        justify-content: end;
-        color: var(--oxford-blue);
+        width: 300px;
+        height: 250px;
     }
 }
 
@@ -437,8 +443,8 @@ footer {
     background-color: var(--matte-green);
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 900px;
-    height: 450px;
+    width: 1100px;
+    height: 380px;
     box-shadow: 20px 20px 0.5px 10px solid black;
     display: flex;
     
@@ -500,6 +506,19 @@ footer {
     left: 5px;
 }
 
+.beforeSecondMainCont {
+    padding: 0px 100px 0px 100px;
+    margin-bottom: 50px;
+    max-width: 1500px;
+}
+
+.beforeSecondMainCont h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--charcoal);
+    margin-bottom: 10px;
+}
+
 .secondMainCont {
     padding: 10px 50px 50px 100px ;
     display: flex;
@@ -541,7 +560,7 @@ summary:hover {
 }
 
 details[open] summary::after {
-    content: "  (show less)";
+    content: "(show less)";
 }
 
 @media (max-width: 1024px) {
@@ -554,14 +573,15 @@ details[open] summary::after {
     
     .blogHead {
         padding: 10px 0 50px 50px;
-        font-size: 80px;
+        font-size: 150px;
+        margin-bottom: 50px;
         color: var(--oxford-blue);
         line-height: 0px;
     }
     
     .blogHead2 {
-        padding: 10px 0 50px 30px;
-        font-size: 80px;
+        padding: 10px 0px 50px 30px;
+        font-size: 150px;
         color: var(--slate);
         writing-mode: vertical-rl;
     }
@@ -575,18 +595,14 @@ details[open] summary::after {
         margin-top: 10px;
         margin-bottom: 50px;
         width: 400px;
-        height: 450px;
+        height: 400px;
         box-shadow: 20px 20px 0.5px 10px solid black;
         
-    }
-    
-    .art1 {
-        padding: 20px 60px 0px 10px;
     }
 
     .art2 {
         margin: 50px 10px 0px 10px;
-        width: 250px;
+        width: 220px;
     }
     
     .art2 h1 {
@@ -620,8 +636,8 @@ details[open] summary::after {
     
     .buttonCont {
         position: absolute;
-        top: 665px;
-        right: 280px;
+        top: 550px;
+        right: 60px;
     }
     
     .buttonCont button{
@@ -739,13 +755,12 @@ details[open] summary::after {
 
     .aboutPara {
         font-size: 16px;
-        padding: 0px 0px 0px 50px;
         word-break: normal;
-        max-width: 650px;
+        max-width: 600px;
     }
 
     .formDes {
-        padding: 50px 0px 0px 50px;
+        padding: 50px 10px 0px 10px;
         margin-bottom: 300px;
         align-items: center;
         height: 600px;
