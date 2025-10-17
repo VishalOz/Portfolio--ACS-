@@ -855,6 +855,11 @@ input:invalid {
     border: var(--cool-gray);
 }
 
+.radioDiv {
+    color: var(--slate);
+    opacity: 0.7;
+}
+
 /*    iphone Pro Max Size    */
 
 @media (max-width: 1024px) {
