@@ -558,8 +558,21 @@ summary:hover {
     text-decoration: underline;
 }
 
-details[open] summary::after {
-    content: "(show less)";
+details .open {
+    display: none;
+}
+
+details[open] .closed {
+    display: none;
+}
+
+details[open] .open {
+    display: inline;
+}
+
+details summary { 
+    list-style: none; 
+    outline: none; 
 }
 
 @media (max-width: 1024px) {
@@ -685,18 +698,25 @@ details[open] summary::after {
         cursor: pointer;
     }
     
-    summary {
-        font-weight: bold;
-        list-style: none;
-        color: #0078ff;
-    }
-    
     summary:hover {
         text-decoration: underline;
     }
     
-    details[open] summary::after {
-        content: "  (show less)";
+    details .open {
+        display: none;
+    }
+    
+    details[open] .closed {
+        display: none;
+    }
+    
+    details[open] .open {
+        display: inline;
+    }
+    
+    details summary { 
+        list-style: none; 
+        outline: none; 
     }
     
 }
