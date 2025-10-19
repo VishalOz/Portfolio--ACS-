@@ -313,16 +313,12 @@ nav ul > li.navLogo {
 .backToTop {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 15px;
     margin: 20px 100px 50px auto;
-    background-color: var(--charcoal);
-    color: var(--off-white);
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
-    box-shadow: 2px 2px 5px var(--cool-gray);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
 }
 
 /*    iphone Pro Max Size    */
