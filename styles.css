@@ -28,65 +28,34 @@ body {
 /* ---------------------------- Navbar --------------------------- */
 
 nav {
-    padding: 30px 100px;
+    margin: 2rem;
 }
-
-nav ul {
+nav ul{
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    gap: 5rem;
+    font-size: 1.2rem;
 }
-
-nav ul > li {
-    margin-right: 50px;
-}
-nav ul > li > a {
+nav ul li a{
     text-decoration: none;
     color: var(--charcoal);
-    font-size: 18px;
-    padding: 8px 5px;
     transition: transform 0.3s ease;
-    display: inline-block; /* This is something really compulsory when you are adding scaling */
+    display: inline-block;
 }
 
-nav ul > li:not(.navLogo) a:hover {
+nav ul li a img {
+    width: 2.5rem;
+    margin-right: 40rem;
+}
+
+nav ul li:not(.navLogo) a:hover {
     transform: scale(1.6);
     color: var(--cool-gray);
 }
 
-nav ul > li > a.active {
+nav ul li a.active {
     transform: scale(1.6);
     font-weight: bold;
-}
-
-nav ul > li.navLogo {
-    margin-right: auto;
-}
-
-.navLogoImg {
-    width: auto;
-    height: 50px;
-}
-
-/*    iphone Pro Max Size    */
-
-@media (max-width: 1024px) {
-    nav {
-        padding: 30px 5px;
-    }
-
-    nav ul li {
-        margin-right: 30px;
-    }
-
-    nav ul li.navLogo {
-        margin-right: 180px;
-    }
-
-    .navLogoImg {
-        width: auto;
-        height: 40px;
-    }
 }
 
 /* ------------------------- Home Page ------------------------------ */
@@ -484,11 +453,13 @@ footer {
     justify-content: end;
 }
 
-.buttonCont a{
+.buttonCont button{
     cursor: pointer;
     transition: transform 0.3s ease;
     padding: 0px 10px 0px 10px;
     background-color: white;
+    padding: 5px 10px 5px 10px;
+    border: none;
     color: black;
     text-decoration: none;
     box-shadow:0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -556,6 +527,7 @@ summary {
 
 summary:hover {
     text-decoration: underline;
+    cursor:pointer;
 }
 
 details .open {
