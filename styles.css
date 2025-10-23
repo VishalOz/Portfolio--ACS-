@@ -44,7 +44,7 @@ nav ul li a{
 }
 
 nav ul li a img {
-    width: 2.5rem;
+    width: 3rem;
     margin-right: 40rem;
 }
 
@@ -60,164 +60,61 @@ nav ul li a.active {
 
 /* ------------------------- Home Page ------------------------------ */
 
-.hero {
+.heroMain {
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    align-items: end;
-    padding: 300px 0 0 700px; 
+    grid-template-rows:  1fr 1fr 1fr;
+    padding: 20rem 2rem 20rem 40rem;
 }
-
-.hero h1 {
-    font-size: 30px;
-    font: bold;
+.heroMain h1 {
+    font-size: 2.5rem;
 }
-
-.heroLogoBg {
-    background: var(--charcoal);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    position: absolute;
-    right: 350px;
-    top: 270px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.heroMain p {
+    font-size: 1rem;
+    width: 45rem;
 }
-
-.heroPara {
-    color: var(--slate);
-    margin-top: 10px;
-    font-size: 15px;
-    width: 650px;
-}
-
-.heroLogo {
-    width: 80px;
-    height: 100px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.heroLogo:hover {
-    transform: rotateY(180deg);
-}
-
 .heroSocials {
-    width: 500px;
-    height: 50px;
-    gap: 15px;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 10px 0 300px 700px;
+    gap: 1.1rem;
 }
-
-.heroSocials .icon {
-    width: 30px;
-    height: 30px;
-}
-
-.animeObj {
-    width: 90px;
-    height: 90px;
-    background: var(--charcoal);
+.heroMainLogo {
     position: absolute;
-    top: 200px;
-    left: 100px;
-    animation: moveAndColor 8s infinite ease-in-out;
-    z-index: 10; 
+    top: 15rem;
+    right: 20rem;
+    width: 13rem;
+    height: 13rem;
+    background: var(--oxford-blue);
+    border-radius: 50%;
+}
+.heroMainLogo img {
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+    height: 8.5rem;
+    width: 7rem;
+}
+.heroMainLogo img:hover {
+    animation: tilt 2s linear infinite;
+    cursor: pointer;
+    
 }
 
-@keyframes moveAndColor{
+@keyframes tilt {
     0% {
-        top: 200px;
-        left: 600px;
-        background:var(--cool-gray);
+        transform: rotate(30deg);
     }
     25% {
-        top: 600px;
-        left: 570px;
-        background:var(--matte-green);
+        transform: rotate(-30deg);
     }
     50% {
-        top: 200px;
-        left: 100px;
-        background:var(--oxford-blue);
+        transform: rotate(30deg);
     }
     75% {
-        top: 700px;
-        left: 100px;
-        background:var(--purl-orange);
+        transform: rotate(-30deg);
     }
     100% {
-        top: 200px;
-        left: 600px;
-        background:var(--slate);
+        transform: rotate(30deg);
     }
 }
-
-/*    iphone Pro Max Size    */
-
-@media (max-width: 1024px) {
-    .hero {
-        padding: 300px 0px 0px 40px;
-    }
-
-    .hero h1 {
-        font-size: 90px;
-        z-index: 11;
-    }
-    
-    .hero p {
-        font-size: 25px;
-        width: 600px;
-        z-index: 11;
-    }
-    
-    .heroLogoBg {
-        position: absolute;
-        right: 70px;
-        top: 200px;
-        width: 280px;
-        height: 280px;
-        z-index: 11;
-    }
-
-    .heroLogo {
-        width: 120px;
-        height: 150px;
-        z-index: 11;
-    }
-
-    .heroSocials {
-        width: 500px;
-        height: 50px;
-        gap: 15px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        margin: 20px 0 300px 40px;
-        z-index: 11;
-    }
-
-    .heroSocials .icon {
-        width: 50px;
-        height: 50px;
-        z-index: 11;
-    }
-    
-    .animeObj {
-        width: 90px;
-        height: 90px;
-        background: var(--charcoal);
-        position: absolute;
-        top: 200px;
-        left: 100px;
-        animation: moveAndColor 8s infinite ease-in-out;
-        z-index: 10; 
-    }
-}
-
 /* ------------------------- Projects Page ------------------------------ */
 
 
@@ -342,36 +239,20 @@ nav ul li a.active {
 footer {
     width: full;
     background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
-    justify-content: center;
-    padding: 50px 0 50px 0;
-}
-
-.footerHeading {
-    color: var(--off-white);
-    font-size: 20px;
+    padding: 2rem 0;
     text-align: center;
-    margin-bottom: 10px;
 }
-
-.footerPara1 {
-    display: flex;
-    justify-content: center;
+footer section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
-
-.footerPara2 {
-    display: flex;
-    justify-content: center;
-}
-
-.footerPara11 {
+footer section h2, .footerPara1, .footerPara2 {
     color: var(--off-white);
-    font-size: 15px;
 }
-
 .footerSocials {
-    gap: 3px;
     display: flex;
     justify-content: center;
+    gap: 1.1rem;
     filter: invert(1) grayscale(100%) brightness(200%);
 }
 
