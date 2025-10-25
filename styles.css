@@ -180,7 +180,7 @@ nav ul li a.active {
 }
 .projectsSecMain {
     margin: 5rem 10rem 0rem 1rem;
-    width: 70rem;
+    width: 68rem;
     height: 25rem;
     background: rgba(221, 214, 214, 0.5);
 }
@@ -196,7 +196,7 @@ article figure img {
     margin: 0rem 1rem 0rem 14rem;
 }
 .projectsSec {
-    margin: 0rem 1rem 4rem 0rem;
+    margin: 4rem 1rem 8rem 0rem;
     width: 68rem;
     height: 25rem;
     background: rgba(221, 214, 214, 0.5);
@@ -210,7 +210,7 @@ article figure img {
 .backToTop {
     display: flex;
     justify-content: flex-end;
-    margin: 0rem 3rem 3rem 0rem;
+    margin: 5rem 3rem 3rem 0rem;
 }
 h3 {
     font-size: 2rem;
@@ -223,6 +223,42 @@ h3 {
 .figCont {
     margin-left: 2rem;
     margin-top: 1rem;
+}
+
+/* ------------------------ Tablet (481px - 768px) ------------------------ */
+@media (min-width: 481px) and (max-width: 768px) {
+    .proHead1 {
+        font-size: 5rem;
+        padding: 0rem 10rem 0rem 3rem;
+        line-height: 6rem;
+    }
+    
+    .proCont2 h1 {
+        writing-mode: vertical-lr;
+        font-size: 5rem;
+        padding: 0rem 1rem 0rem 2rem;
+    }
+    .projectsSecMain {
+        margin: 5rem 10rem 0rem 1rem;
+        width: 20rem;
+        height: 25rem;
+        background: rgba(221, 214, 214, 0.5);
+    }
+    .proCont2 {
+        display: flex;
+    }
+    article figure img {
+        width: 20rem;
+        height: 10rem;
+    }
+    .projectsSecCont {
+        margin: 0rem 1rem 15rem 10rem;
+    }
+    .projectsSec {
+        width: 20rem;
+        height: 25rem;
+    }
+
 }
 
 /* ---------------------------  Footer -------------------------------------- */
