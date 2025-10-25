@@ -429,119 +429,70 @@ details[open] .open {
     font-size: 8rem;
     line-height: 0;
 }
+.aboutPara {
+    width: 70rem;
+}
 
-/*    iphone Pro Max Size    */
-
-@media (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .aboutMainHead {
-        display: flex;
-        gap: 5px;
-        margin-bottom: 30px;
+        padding: 4rem 10rem 2rem 2rem;
+        font-size: 2rem;
+        line-height: 0; 
     }
-    
-    .aboutHead {
-        display: flex;
-        font-family: 'Alfa Slab One';
-        margin: 10px 0px 0px 50px;
-        cursor: pointer;
+    .aboutCont .aboutHead2 {
+        padding: 0rem 3rem 0rem 4rem;
+        writing-mode: vertical-lr;
+        font-size: 4rem;
+        line-height: 0;
     }
-
-    .aboutPara {
-        font-size: 16px;
-        word-break: normal;
-        max-width: 600px;
+    .aboutCont .aboutPara {
+        margin: 0rem 5rem 6rem 1rem;
     }
 
-    .formDes {
-        padding: 50px 10px 0px 10px;
-        margin-bottom: 300px;
-        align-items: center;
-        height: 600px;
-    }
-    
-    .des {
-        width: 80px;
-        height: 200px;
-        background: #000;
-    }
 }
 
 /* -------------------------------- Form -------------------------------------- */
-
 .subscribe {
-    max-width: 500px;
-    margin: auto;
-    margin-bottom: 100px;
-    padding: 20px;
-    border: 1px solid var(--cool-gray);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0rem 5rem 6rem 10rem; 
+    border: 0.04rem solid var(--cool-gray);
+    padding: 3rem;
 }
-
-.subscribe p {
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
 .subscribe h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
-
-.message {
-    height: 100px;
-    resize: none;
-    border: 1px solid var(--charcoal);
-    font-size: 14px;
-    outline: none;
+.subscribe p {
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
-
-.conditionDiv {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#checkbox {
-    border: 1px solid var(--charcoal);
-}
-
-.condition {
-    font-size: 1px;
-    color: var(--slate);
-    opacity: 0.7;
-    text-align: flex-start;
-}
-
 .subscribeForm {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
 }
-
 .subscribeForm label {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .subscribeForm input[type="text"],
 .subscribeForm input[type="email"],
 .subscribeForm input[type="textfield"] {
-    padding: 10px;
-    border: 1px solid var(--charcoal);
-    font-size: 14px;
+    padding: 1rem;
+    border: 0.1px solid var(--charcoal);
+    font-size: 1rem;
     outline: none;
 }
 
 .subscribeForm input:focus {
-   border: 2px solid var(--charcoal);
+   border: 0.2rem solid var(--charcoal);
 }
-
 .subscribeForm button {
-    padding: 10px;
+    padding: 1rem;
     background-image: linear-gradient(to right, var(--slate) , var(--charcoal), var(--slate));
     color: var(--off-white);
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 input:invalid {
@@ -552,17 +503,13 @@ input:invalid {
     color: var(--slate);
     opacity: 0.7;
 }
-
-/*    iphone Pro Max Size    */
-
-@media (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .subscribe {
-        max-width: full;
-        margin: 50px 50px 50px 50px;
-        padding: 20px;
-        border: 1px solid var(--cool-gray);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 0rem 5rem 6rem 10rem; 
+        border: 0.04rem solid var(--cool-gray);
+        padding: 3rem;
     }
+
 }
 
 
