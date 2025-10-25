@@ -58,6 +58,20 @@ nav ul li a.active {
     font-weight: bold;
 }
 
+/* ------------------------ Tablet (481px - 768px) ------------------------ */
+@media (min-width: 481px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;  /* horizontal on tablet */
+        gap: 2rem;
+        font-size: 1.1rem;
+    }
+    
+    nav ul li a img {
+        width: 2.5rem;
+        margin-right: 6rem;
+    }
+}
+
 /* ------------------------- Home Page ------------------------------ */
 
 .heroMain {
