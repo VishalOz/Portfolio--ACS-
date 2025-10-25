@@ -372,6 +372,46 @@ details[open] .open {
     display: inline;
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    .blogCont h1{
+        padding: 4rem 10rem 2rem 2rem;
+        font-size: 5rem;
+        line-height: 0;
+    }
+    .mainCont {
+        padding: 0rem 10rem 0rem 4rem;
+        display: flex;
+    }
+    .blogHead2 {
+        padding: 0rem 3rem 0rem 0rem;
+        writing-mode: vertical-lr;
+        font-size: 5rem;
+        line-height: 0;
+    }
+    .art1 {
+        margin: 2rem 0rem 10rem 0rem;
+        background: var(--matte-green);
+        padding: 3rem 2rem 3rem 2rem;
+    }
+    .art1 {
+        margin: 2rem 0rem 10rem 0rem;
+        background: var(--matte-green);
+        padding: 3rem 4rem 3rem 4rem;
+    }
+    .art1 h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .secondMainCont {
+        padding: 0rem 3rem 10rem 3rem;
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;  
+    }
+
+}
+
 /* ------------------------- About Page ------------------------------------- */
 
 .aboutMainHead {
