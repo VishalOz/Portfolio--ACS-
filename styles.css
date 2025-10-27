@@ -42,33 +42,29 @@ nav ul li a{
     transition: transform 0.3s ease;
     display: inline-block;
 }
-
 nav ul li a img {
     width: 3rem;
     margin-right: 40rem;
 }
-
 nav ul li:not(.navLogo) a:hover {
     transform: scale(1.6);
     color: var(--cool-gray);
 }
-
 nav ul li a.active {
     transform: scale(1.6);
     font-weight: bold;
 }
-
-/* ------------------------ Tablet (481px - 768px) ------------------------ */
-@media (min-width: 481px) and (max-width: 768px) {
-    nav ul {
-        flex-direction: row;  /* horizontal on tablet */
-        gap: 2rem;
-        font-size: 1.1rem;
+/* Mobile-first design */
+@media (min-width: 1025px) {
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 4rem;
+        font-size: 2rem;
     }
-    
     nav ul li a img {
-        width: 2.5rem;
-        margin-right: 6rem;
+        width: 4rem;
+        margin-right: 25rem;
     }
 }
 
@@ -124,45 +120,6 @@ nav ul li a.active {
     100% {
         transform: rotate(10deg);
     }
-}
-
-/* ------------------------ Tablet (481px - 768px) ------------------------ */
-@media (min-width: 481px) and (max-width: 768px) {
-    .heroMain {
-        display: grid;
-        grid-template-rows:  1fr 1fr 1fr;
-        padding: 20rem 0rem 10rem 4rem;
-    }
-    .heroMain h1 {
-        font-size: 2rem;
-    }
-    .heroMain p {
-        font-size: 1rem;
-        width: 30rem;
-        margin-bottom: 0rem;
-    }
-    .heroSocials {
-        display: flex;
-        gap: 1.1rem;
-    }
-    .heroMainLogo {
-        position: absolute;
-        top: 15rem;
-        right: 5rem;
-        width: 13rem;
-        height: 13rem;
-        background: var(--oxford-blue);
-        border-radius: 50%;
-    }
-    .heroMainLogo img {
-        position: absolute;
-        animation: tilt 2s linear infinite;
-        top: 2.5rem;
-        right: 3rem;
-        height: 8.5rem;
-        width: 7rem;
-    }
-
 }
 
 /* ------------------------- Projects Page ------------------------------ */
@@ -225,41 +182,6 @@ h3 {
     margin-top: 1rem;
 }
 
-/* ------------------------ Tablet (481px - 768px) ------------------------ */
-@media (min-width: 481px) and (max-width: 768px) {
-    .proHead1 {
-        font-size: 5rem;
-        padding: 0rem 10rem 0rem 3rem;
-        line-height: 6rem;
-    }
-    
-    .proCont2 h1 {
-        writing-mode: vertical-lr;
-        font-size: 5rem;
-        padding: 0rem 1rem 0rem 2rem;
-    }
-    .projectsSecMain {
-        margin: 5rem 10rem 0rem 1rem;
-        width: 20rem;
-        height: 25rem;
-        background: rgba(221, 214, 214, 0.5);
-    }
-    .proCont2 {
-        display: flex;
-    }
-    article figure img {
-        width: 20rem;
-        height: 10rem;
-    }
-    .projectsSecCont {
-        margin: 0rem 1rem 15rem 10rem;
-    }
-    .projectsSec {
-        width: 20rem;
-        height: 25rem;
-    }
-
-}
 
 /* ---------------------------  Footer -------------------------------------- */
 
@@ -282,6 +204,17 @@ footer section h2, .footerPara1, .footerPara2 {
     gap: 1.1rem;
     filter: invert(1) grayscale(100%) brightness(200%);
 }
+/* Mobile-first design */
+@media (min-width: 1025px) {
+    footer {
+        width: full;
+        background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
+        padding: 10rem 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
 
 /* ------------------------- Blogs Page ---------------------------------- */
 
@@ -511,6 +444,7 @@ input:invalid {
     }
 
 }
+
 
 
   
