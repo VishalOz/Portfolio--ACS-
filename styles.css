@@ -54,19 +54,6 @@ nav ul li a.active {
     transform: scale(1.6);
     font-weight: bold;
 }
-/* Mobile-first design */
-@media (min-width: 1025px) {
-    nav ul{
-        list-style: none;
-        display: flex;
-        gap: 4rem;
-        font-size: 2rem;
-    }
-    nav ul li a img {
-        width: 4rem;
-        margin-right: 25rem;
-    }
-}
 
 /* ------------------------- Home Page ------------------------------ */
 
@@ -204,16 +191,6 @@ footer section h2, .footerPara1, .footerPara2 {
     gap: 1.1rem;
     filter: invert(1) grayscale(100%) brightness(200%);
 }
-/* Mobile-first design */
-@media (min-width: 1025px) {
-    footer {
-        width: full;
-        background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
-        padding: 10rem 0;
-        text-align: center;
-        font-size: 2rem;
-    }
-}
 
 
 /* ------------------------- Blogs Page ---------------------------------- */
@@ -305,46 +282,6 @@ details[open] .open {
     display: inline;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-    .blogCont h1{
-        padding: 4rem 10rem 2rem 2rem;
-        font-size: 5rem;
-        line-height: 0;
-    }
-    .mainCont {
-        padding: 0rem 10rem 0rem 4rem;
-        display: flex;
-    }
-    .blogHead2 {
-        padding: 0rem 3rem 0rem 0rem;
-        writing-mode: vertical-lr;
-        font-size: 5rem;
-        line-height: 0;
-    }
-    .art1 {
-        margin: 2rem 0rem 10rem 0rem;
-        background: var(--matte-green);
-        padding: 3rem 2rem 3rem 2rem;
-    }
-    .art1 {
-        margin: 2rem 0rem 10rem 0rem;
-        background: var(--matte-green);
-        padding: 3rem 4rem 3rem 4rem;
-    }
-    .art1 h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-    .secondMainCont {
-        padding: 0rem 3rem 10rem 3rem;
-        display: grid;
-        gap: 1rem;
-        margin-top: 1rem;  
-    }
-
-}
-
 /* ------------------------- About Page ------------------------------------- */
 
 .aboutMainHead {
@@ -364,24 +301,6 @@ details[open] .open {
 }
 .aboutPara {
     width: 70rem;
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .aboutMainHead {
-        padding: 4rem 10rem 2rem 2rem;
-        font-size: 2rem;
-        line-height: 0; 
-    }
-    .aboutCont .aboutHead2 {
-        padding: 0rem 3rem 0rem 4rem;
-        writing-mode: vertical-lr;
-        font-size: 4rem;
-        line-height: 0;
-    }
-    .aboutCont .aboutPara {
-        margin: 0rem 5rem 6rem 1rem;
-    }
-
 }
 
 /* -------------------------------- Form -------------------------------------- */
@@ -436,14 +355,7 @@ input:invalid {
     color: var(--slate);
     opacity: 0.7;
 }
-@media (min-width: 481px) and (max-width: 768px) {
-    .subscribe {
-        margin: 0rem 5rem 6rem 10rem; 
-        border: 0.04rem solid var(--cool-gray);
-        padding: 3rem;
-    }
 
-}
 
 
 
