@@ -42,34 +42,17 @@ nav ul li a{
     transition: transform 0.3s ease;
     display: inline-block;
 }
-
 nav ul li a img {
     width: 3rem;
     margin-right: 40rem;
 }
-
 nav ul li:not(.navLogo) a:hover {
     transform: scale(1.6);
     color: var(--cool-gray);
 }
-
 nav ul li a.active {
     transform: scale(1.6);
     font-weight: bold;
-}
-
-/* ------------------------ Tablet (481px - 768px) ------------------------ */
-@media (min-width: 481px) and (max-width: 768px) {
-    nav ul {
-        flex-direction: row;  /* horizontal on tablet */
-        gap: 2rem;
-        font-size: 1.1rem;
-    }
-    
-    nav ul li a img {
-        width: 2.5rem;
-        margin-right: 6rem;
-    }
 }
 
 /* ------------------------- Home Page ------------------------------ */
@@ -124,45 +107,6 @@ nav ul li a.active {
     100% {
         transform: rotate(10deg);
     }
-}
-
-/* ------------------------ Tablet (481px - 768px) ------------------------ */
-@media (min-width: 481px) and (max-width: 768px) {
-    .heroMain {
-        display: grid;
-        grid-template-rows:  1fr 1fr 1fr;
-        padding: 20rem 0rem 10rem 4rem;
-    }
-    .heroMain h1 {
-        font-size: 2rem;
-    }
-    .heroMain p {
-        font-size: 1rem;
-        width: 30rem;
-        margin-bottom: 0rem;
-    }
-    .heroSocials {
-        display: flex;
-        gap: 1.1rem;
-    }
-    .heroMainLogo {
-        position: absolute;
-        top: 15rem;
-        right: 5rem;
-        width: 13rem;
-        height: 13rem;
-        background: var(--oxford-blue);
-        border-radius: 50%;
-    }
-    .heroMainLogo img {
-        position: absolute;
-        animation: tilt 2s linear infinite;
-        top: 2.5rem;
-        right: 3rem;
-        height: 8.5rem;
-        width: 7rem;
-    }
-
 }
 
 /* ------------------------- Projects Page ------------------------------ */
@@ -225,41 +169,6 @@ h3 {
     margin-top: 1rem;
 }
 
-/* ------------------------ Tablet (481px - 768px) ------------------------ */
-@media (min-width: 481px) and (max-width: 768px) {
-    .proHead1 {
-        font-size: 5rem;
-        padding: 0rem 10rem 0rem 3rem;
-        line-height: 6rem;
-    }
-    
-    .proCont2 h1 {
-        writing-mode: vertical-lr;
-        font-size: 5rem;
-        padding: 0rem 1rem 0rem 2rem;
-    }
-    .projectsSecMain {
-        margin: 5rem 10rem 0rem 1rem;
-        width: 20rem;
-        height: 25rem;
-        background: rgba(221, 214, 214, 0.5);
-    }
-    .proCont2 {
-        display: flex;
-    }
-    article figure img {
-        width: 20rem;
-        height: 10rem;
-    }
-    .projectsSecCont {
-        margin: 0rem 1rem 15rem 10rem;
-    }
-    .projectsSec {
-        width: 20rem;
-        height: 25rem;
-    }
-
-}
 
 /* ---------------------------  Footer -------------------------------------- */
 
@@ -282,6 +191,7 @@ footer section h2, .footerPara1, .footerPara2 {
     gap: 1.1rem;
     filter: invert(1) grayscale(100%) brightness(200%);
 }
+
 
 /* ------------------------- Blogs Page ---------------------------------- */
 
@@ -372,46 +282,6 @@ details[open] .open {
     display: inline;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-    .blogCont h1{
-        padding: 4rem 10rem 2rem 2rem;
-        font-size: 5rem;
-        line-height: 0;
-    }
-    .mainCont {
-        padding: 0rem 10rem 0rem 4rem;
-        display: flex;
-    }
-    .blogHead2 {
-        padding: 0rem 3rem 0rem 0rem;
-        writing-mode: vertical-lr;
-        font-size: 5rem;
-        line-height: 0;
-    }
-    .art1 {
-        margin: 2rem 0rem 10rem 0rem;
-        background: var(--matte-green);
-        padding: 3rem 2rem 3rem 2rem;
-    }
-    .art1 {
-        margin: 2rem 0rem 10rem 0rem;
-        background: var(--matte-green);
-        padding: 3rem 4rem 3rem 4rem;
-    }
-    .art1 h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-    .secondMainCont {
-        padding: 0rem 3rem 10rem 3rem;
-        display: grid;
-        gap: 1rem;
-        margin-top: 1rem;  
-    }
-
-}
-
 /* ------------------------- About Page ------------------------------------- */
 
 .aboutMainHead {
@@ -431,24 +301,6 @@ details[open] .open {
 }
 .aboutPara {
     width: 70rem;
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .aboutMainHead {
-        padding: 4rem 10rem 2rem 2rem;
-        font-size: 2rem;
-        line-height: 0; 
-    }
-    .aboutCont .aboutHead2 {
-        padding: 0rem 3rem 0rem 4rem;
-        writing-mode: vertical-lr;
-        font-size: 4rem;
-        line-height: 0;
-    }
-    .aboutCont .aboutPara {
-        margin: 0rem 5rem 6rem 1rem;
-    }
-
 }
 
 /* -------------------------------- Form -------------------------------------- */
@@ -503,14 +355,8 @@ input:invalid {
     color: var(--slate);
     opacity: 0.7;
 }
-@media (min-width: 481px) and (max-width: 768px) {
-    .subscribe {
-        margin: 0rem 5rem 6rem 10rem; 
-        border: 0.04rem solid var(--cool-gray);
-        padding: 3rem;
-    }
 
-}
+
 
 
   
