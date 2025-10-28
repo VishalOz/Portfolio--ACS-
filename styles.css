@@ -55,6 +55,30 @@ nav ul li a.active {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+        font-size: 1rem;
+    }
+    nav ul li a img {
+        width: 1.9rem;
+        margin-right: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+        font-size: 1rem;
+    }
+    nav ul li a img {
+        width: 1.9rem;
+        margin-right: 2rem;
+    }
+}
 /* ------------------------- Home Page ------------------------------ */
 
 .heroMain {
@@ -83,7 +107,7 @@ nav ul li a.active {
     border-radius: 50%;
 }
 .heroMainLogo img {
-    animation: tilt 2s linear infinite;
+    animation: tilt 3s linear infinite;
     position: absolute;
     top: 2.5rem;
     right: 3rem;
@@ -108,6 +132,53 @@ nav ul li a.active {
         transform: rotate(10deg);
     }
 }
+@media (max-width: 768px) {
+    .heroMain {
+      grid-template-rows: auto auto auto;
+      padding: 8rem 1.5rem 8rem 1.5rem; 
+      text-align: center; 
+    }
+  
+    .heroMain h1 {
+      font-size: 1.8rem;
+    }
+  
+    .heroMain p {
+      font-size: 0.95rem;
+      width: 100%; 
+      max-width: 320px;
+      margin: 0 auto; 
+    }
+  
+    .heroSocials {
+      justify-content: center;
+      gap: 1rem;
+    }
+    .heroMainLogo {
+        display: none;
+    }
+    .heroMainLogo img {
+        display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    .heroMain {
+      padding: 6rem 1rem;
+    }
+  
+    .heroMain h1 {
+      font-size: 1.5rem;
+    }
+    .heroMainLogo {
+        display: none;
+    }
+    .heroMainLogo img {
+        display: none;
+    }
+  }
+    
+
+
 
 /* ------------------------- Projects Page ------------------------------ */
 
@@ -169,7 +240,6 @@ h3 {
     margin-top: 1rem;
 }
 
-
 /* ---------------------------  Footer -------------------------------------- */
 
 footer {
@@ -191,6 +261,7 @@ footer section h2, .footerPara1, .footerPara2 {
     gap: 1.1rem;
     filter: invert(1) grayscale(100%) brightness(200%);
 }
+
 
 
 /* ------------------------- Blogs Page ---------------------------------- */
@@ -303,6 +374,8 @@ details[open] .open {
     width: 70rem;
 }
 
+
+
 /* -------------------------------- Form -------------------------------------- */
 .subscribe {
     margin: 0rem 5rem 6rem 10rem; 
@@ -356,6 +429,39 @@ input:invalid {
     opacity: 0.7;
 }
 
+@media (max-width: 768px) {
+    footer {
+        width: full;
+        background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
+        padding: 1rem 0rem 1rem 0rem;
+        text-align: center;
+    }
+    footer section {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    footer section h2, .footerPara1, .footerPara2 {
+        color: var(--off-white);
+    }
+    .footerSocials {
+        display: flex;
+        justify-content: center;
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+}
+@media (max-width: 480px) {
+    footer {
+        width: full;
+        background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
+        padding: 1rem;
+        text-align: center;
+    }
+    .footerSocials {
+        display: flex;
+        justify-content: center;
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+}
 
 
 
