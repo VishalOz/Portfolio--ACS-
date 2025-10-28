@@ -221,13 +221,13 @@ article figure img {
 }
 .projectsSecCont > article:first-child {
     border: 1px solid var(--off-white);
-    padding: 2rem;
 }
 .projectsSecCont > article:last-child {
     border: 1px solid var(--off-white);
-    padding: 2rem;
 }
-
+.projectSecCont > article:not(.projectsSecMain) {
+    border: 2px solid var(--slate);
+}
   
 .projectsSec:hover,
 .projectsSecMain:hover {
@@ -664,7 +664,6 @@ form:has(input:valid) button {
     opacity: 1;
     pointer-events: auto;
 }
-
 
 /*   Tablet  */
 @media  (max-width: 992px) {
