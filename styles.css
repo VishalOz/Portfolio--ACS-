@@ -453,6 +453,73 @@ details[open] .open {
     display: inline;
 }
 
+/*  tablets   */
+@media (max-width: 992px) {
+    .blogCont h1 {
+        padding: 3rem 2rem;
+        font-size: 6rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+    .mainCont {
+        flex-direction: column;
+        padding: 0 2rem;
+        align-items: center;
+    }
+    .blogHead2 {
+        display: none;
+    }
+    .art1 {
+        width: 100%;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+    .secondMainCont {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .secondMainCont article {
+        width: 100%;
+        max-width: 800px;
+        padding: 2.5rem;
+        
+    }
+    .secondMainCont article:nth-child(3) {
+        margin-bottom: 5rem;
+    }
+}
+  
+  /* Mobile phones */
+  @media (max-width: 480px) {
+    .blogCont h1 {
+        padding: 2rem 1rem;
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+    .art h1 {
+        font-size: 1.5rem;
+    }
+    .art p {
+        font-size: 0.9rem;
+    }
+    .buttonCont button {
+        padding: 0.2rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .beforeSecondMainCont,
+    .secondManCont {
+        padding: 0 1rem;
+    }
+    .secondMainCont article {
+        padding: 1.5rem;
+    }
+    .secondMainCont article:nth-child(3) {
+        margin-bottom: 5rem;
+    }
+  }  
+
 /* ------------------------- About Page ------------------------------------- */
 
 .aboutMainHead {
