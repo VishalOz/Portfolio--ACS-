@@ -184,26 +184,27 @@ nav ul li a.active {
     font-size: 8rem;
     padding: 0rem 10rem 0rem 5rem;
     line-height: 6rem;
-  }
+}
   
-  .proCont2 {
+.proCont2 {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-  }
+}
   
-  .proCont2 h1 {
+.proCont2 h1 {
     writing-mode: vertical-lr;
     font-size: 8rem;
     padding: 0rem 0rem 0rem 2rem;
-  }
+}
 
-  .projectsSecCont {
+.projectsSecCont {
     margin: 0rem 0rem 0rem 15rem;
 }
+
   
-  .projectsSecMain,
-  .projectsSec {
+.projectsSecMain,
+.projectsSec {
     width: 100%;
     max-width: 68rem; 
     height: auto; 
@@ -211,38 +212,47 @@ nav ul li a.active {
     margin: 5rem auto;
     border-radius: 8px;
     padding-bottom: 1rem;
-  }
+}
   
-  article figure img {
+article figure img {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
+.projectsSecCont > article:first-child {
+    border: 1px solid var(--off-white);
+    padding: 2rem;
+}
+.projectsSecCont > article:last-child {
+    border: 1px solid var(--off-white);
+    padding: 2rem;
+}
+
   
-  .projectsSec:hover,
-  .projectsSecMain:hover {
+.projectsSec:hover,
+.projectsSecMain:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transform: scale(1.02);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+}
   
-  .backToTop {
+.backToTop {
     display: flex;
     justify-content: flex-end;
     margin: 5rem 3rem 3rem 0rem;
-  }
+}
   
-  h3 {
+h3 {
     font-size: 2rem;
     font-weight: bold;
     margin-left: 1rem;
-  }
+}
   
-  .caption,
-  .figCont {
+.caption,
+.figCont {
     margin-left: 1rem;
-  }
+}
   
   /*    Tablet     */
   @media (max-width: 992px) {
@@ -586,7 +596,7 @@ details[open] .open {
   
 /* -------------------------------- Form -------------------------------------- */
 .subscribe {
-    margin: 0rem 5rem 6rem 10rem; 
+    margin: 0rem 5rem 6rem 10rem;
     border: 0.04rem solid var(--cool-gray);
     padding: 3rem;
 }
@@ -608,34 +618,53 @@ details[open] .open {
     font-weight: bold;
     font-size: 1rem;
 }
-
 .subscribeForm input[type="text"],
-.subscribeForm input[type="email"],
-.subscribeForm input[type="textfield"] {
+.subscribeForm input[type="email"] {
     padding: 1rem;
-    border: 0.1px solid var(--charcoal);
+    border: 1px solid var(--charcoal);
     font-size: 1rem;
     outline: none;
+    border-radius: 0.35rem;
+    transition: 0.25s ease;
+}
+.subscribeForm input:focus {
+    border: 2px solid var(--slate);
+}
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #ff4d4d;
+    background-color: rgba(255, 0, 0, 0.08);
 }
 
-.subscribeForm input:focus {
-   border: 0.2rem solid var(--charcoal);
+input:valid {
+    border-color: #16a34a;
+}
+.conditionDiv,
+.radioDiv {
+    color: var(--slate);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 .subscribeForm button {
     padding: 1rem;
-    background-image: linear-gradient(to right, var(--slate) , var(--charcoal), var(--slate));
+    background-image: linear-gradient(to right, var(--slate), var(--charcoal), var(--slate));
     color: var(--off-white);
     font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.35rem;
+    transition: 0.25s ease;
+}
+form:has(input:invalid) button {
+    opacity: 0.5;
+    pointer-events: none;
 }
 
-input:invalid {
-    border: var(--cool-gray);
+form:has(input:valid) button {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-.radioDiv {
-    color: var(--slate);
-    opacity: 0.7;
-}
 
 /*   Tablet  */
 @media  (max-width: 992px) {
