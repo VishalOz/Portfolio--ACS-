@@ -10,15 +10,16 @@
 }
 
 :root {
-    --charcoal: #111827ff;
-    --steel: #1f2937ff;
-    --slate: #374151ff;
-    --cool-gray: #9ca3afff;
-    --off-white: #f9fafbff;
-    --oxford-blue: #1b263bff;
+    --charcoal: #111827;
+    --steel: #1f2937;
+    --slate: #374151;
+    --cool-gray: #9ca3af;
+    --off-white: #f9fafb;
+    --oxford-blue: #1b263b;
     --purl-orange: #f1856f;
     --matte-green: #afd2a2;
 }
+
 
 body {
     background-color: var(--off-white);
@@ -36,7 +37,7 @@ nav ul{
     gap: 5rem;
     font-size: 1.2rem;
 }
-nav ul li a{
+nav > ul > li > a{
     text-decoration: none;
     color: var(--charcoal);
     transition: transform 0.3s ease;
@@ -84,7 +85,7 @@ nav ul li a.active {
 
 .heroMain {
     display: grid;
-    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-rows:  repeat(3, 1fr);
     padding: 20rem 2rem 20rem 40rem;
 }
 .heroMain h1 {
@@ -310,14 +311,14 @@ nav ul li a.active {
 /* ---------------------------  Footer -------------------------------------- */
 
 footer {
-    width: full;
+    width: 100%;
     background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
     padding: 2rem 0;
     text-align: center;
 }
 footer section {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 footer section h2, .footerPara1, .footerPara2 {
     color: var(--off-white);
@@ -330,14 +331,14 @@ footer section h2, .footerPara1, .footerPara2 {
 }
 @media (max-width: 768px) {
     footer {
-        width: full;
+        width: 100%;
         background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
         padding: 1rem 0rem 1rem 0rem;
         text-align: center;
     }
     footer section {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
     footer section h2, .footerPara1, .footerPara2 {
         color: var(--off-white);
@@ -350,7 +351,7 @@ footer section h2, .footerPara1, .footerPara2 {
 }
 @media (max-width: 480px) {
     footer {
-        width: full;
+        width: 100%;
         background-image: linear-gradient(to right, var(--charcoal) , rgba(0, 0, 0, 0.8));
         padding: 1rem;
         text-align: center;
@@ -541,8 +542,48 @@ details[open] .open {
     width: 70rem;
 }
 
+/*  Tablet  */
 
+@media (max-width: 992px) {
+    .aboutMainHead {
+        padding: 2rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+    .aboutCont {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    .aboutCont .aboutHead2 {
+        display: none;
+    }
+    .aboutPara {
+        width: 100%;
+        max-width: 800px;
+        padding: 1rem;
+    }
+}
+  
+  /*    Mobile   */
 
+  @media (max-width: 480px) {
+    .aboutMainHead {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 1.5rem 1rem;
+    }
+    .aboutCont .aboutHead2 {
+        font-size: 2.5rem;
+    }
+    aboutPara {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+  }
+  
 /* -------------------------------- Form -------------------------------------- */
 .subscribe {
     margin: 0rem 5rem 6rem 10rem; 
@@ -594,6 +635,35 @@ input:invalid {
 .radioDiv {
     color: var(--slate);
     opacity: 0.7;
+}
+
+/*   Tablet  */
+@media  (max-width: 992px) {
+    .subscribe {
+        margin: 2rem auto;
+        width: 80%;
+        max-width: 800px;
+        padding: 2rem;
+    }
+    .subscribeForm {
+        width: 100%;
+    }
+}
+
+/*   Mobile  */
+@media (max-width: 480px) {
+    .subscribe {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    .subscribeForm label {
+        font-size: 0.9rem;
+    }
+    .subscribeForm input,
+    .subscribeForm button {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
 }
 
 
